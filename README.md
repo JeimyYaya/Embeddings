@@ -1,4 +1,5 @@
 # Embeddings and Data Preparation for LLMs
+- Jeimy Yaya
 
 This repository implements the core concepts from **Chapter 2** of *Build a Large Language Model (From Scratch)* by Sebastian Raschka.
 
@@ -52,17 +53,6 @@ The notebook includes original explanations covering:
 - Why sliding windows are required for next-token prediction
 - Why embeddings encode meaning
 - How embeddings relate to neural network concepts
-
-### Why Do Embeddings Encode Meaning?
-
-Embeddings are learnable vector representations stored in an embedding matrix.  
-Each token ID indexes a row in this matrix.
-
-During training, vectors are updated via backpropagation to minimize next-token prediction loss.  
-Tokens appearing in similar contexts receive similar gradient updates, leading to geometrically similar representations.
-
-Thus, meaning emerges as spatial structure in high-dimensional vector space — not as symbolic rules.
-
 ---
 
 ## 🔬 Experiment: Effect of `max_length` and `stride`
